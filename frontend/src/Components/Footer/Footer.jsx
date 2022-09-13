@@ -126,7 +126,7 @@ export default function Footer() {
 					>
 						<h2>Subscribe to our newsletter</h2>
 						<Form
-							name='basic'
+							name='basic3'
 							layout='inline'
 							className='newsletter'
 							wrapperCol={{
