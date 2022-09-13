@@ -13,9 +13,9 @@ export function Dashboard() {
 			<h1 className='dashboard-welcome-message'>
 				Welcome back
 				{name ? (
-					''(<span className='user-name'>, {name}</span>)
+					<span className='user-name'>{`, ${name}`}</span>
 				) : (
-					<span className='user-name'>, {googleName}</span>
+					<span className='user-name'>{`, ${googleName}`}</span>
 				)}{' '}
 				👋🏻
 			</h1>
