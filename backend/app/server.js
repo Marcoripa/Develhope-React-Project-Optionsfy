@@ -10,10 +10,10 @@ const app = express();
 // prevent cors errors
 app.use(cors(corsOptions));
 
-// parse all requests of content-type (e.g., application/json)
+// parse all requests of content-type application/json
 app.use(express.json());
 
-// parse all requests with url-encoded (application-urlencoded)
+// parse all requests of content-type application-urlencoded
 app.use(express.urlencoded({ extended: true }));
 
 // init first generic route
@@ -21,7 +21,7 @@ app.get('/', (req, res) => {
 	res.json({ message: 'Everything ok 👌🏻' });
 });
 
-// import routes
+// import authentication routes
 const authRoutes = require('./routes/auth.routes');
 app.use('/auth', authRoutes);
 

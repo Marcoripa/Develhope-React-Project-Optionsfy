@@ -4,6 +4,7 @@ const express = require('express');
 
 const app = express();
 
+// allow cross origin resource sharing
 app.use(function (req, res, next) {
 	res.header(
 		'Access-Control-Allow-Headers',
